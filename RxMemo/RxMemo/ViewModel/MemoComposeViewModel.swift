@@ -39,5 +39,4 @@ class MemoComposeViewModel: CommonViewModel {
     }
     super.init(title: title, sceneCoordinator: sceneCoordinator, storage: storage)
   }
-  
 }
