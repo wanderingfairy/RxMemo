@@ -39,8 +39,6 @@ extension Scene {
       
       composeVC.bind(viewModel: viewModel)
       return nav
-    default:
-      <#code#>
     }
   }
 }

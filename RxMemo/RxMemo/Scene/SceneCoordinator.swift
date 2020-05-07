@@ -62,6 +62,7 @@ class SceneCoordinator: SceneCoordinatorType {
         }
       } else if let nav = self.currentVC.navigationController {
         guard nav.popViewController(animated: animated) != nil else { completable(.error(TransitionError.cannotPop))
+          return Disposables.create()
         }
         self.currentVC = nav.viewControllers.last!
         completable(.completed)
